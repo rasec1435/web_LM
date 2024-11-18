@@ -76,3 +76,96 @@ button {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* Responsive design rules */
+
+/* General: For small devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .discos {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .music-channels {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .channel {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contenedor-twitch {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .retransmision-principal {
+        font-size: 14px;
+        min-height: auto;
+    }
+    .contenedor {
+        padding: 10px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .music-channels {
+        width: 90%;
+    }
+    .contenedor-twitch {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+/* Responsive fixes */
+
+/* Fix for image inside 'titulo' in 'retransmision principal' */
+@media (max-width: 768px) {
+    .retransmision-principal img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Fix for Twitch retransmission */
+@media (max-width: 768px) {
+    .contenedor-twitch iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Fix for about text wrap and info images */
+@media (max-width: 768px) {
+    .about-text-wrap img,
+    .about-text-info img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* Fix for tables */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+    table th, table td {
+        padding: 10px;
+        text-align: left;
+    }
+    table th {
+        background-color: #f4f4f4;
+    }
+    table td {
+        word-wrap: break-word;
+    }
+}

@@ -983,3 +983,27 @@ background: linear-gradient(375deg, transparent, transparent);
   }
 }
 
+
+/* Responsive fixes in templatemo-festava-live.css */
+
+/* Fix for image inside 'titulo' in 'retransmision principal' */
+@media (max-width: 768px) {
+    .retransmision-principal img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Refined responsive fixes in templatemo-festava-live.css */
+
+/* Prevent image in 'titulo' from overlapping navigation bar in mobile view */
+@media (max-width: 768px) {
+    .retransmision-principal img {
+        width: 100%;
+        height: auto;
+        margin-top: 60px; /* Adjust to provide space below the navigation bar */
+    }
+    .retransmision-principal {
+        padding-top: 20px; /* Ensure the container accounts for additional spacing */
+    }
+}

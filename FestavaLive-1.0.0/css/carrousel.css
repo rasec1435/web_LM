@@ -188,3 +188,150 @@ background: red;
 	}
 }
 
+
+/* Responsive fixes in carrousel.css */
+
+/* Fix for about text wrap and info images */
+@media (max-width: 768px) {
+    .about-text-wrap img,
+    .about-text-info img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* Fix for tables */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+    table th, table td {
+        padding: 10px;
+        text-align: left;
+    }
+    table th {
+        background-color: #f4f4f4;
+    }
+    table td {
+        word-wrap: break-word;
+    }
+}
+
+/* Refined responsive fixes in carrousel.css */
+
+/* Prevent overlap between about text wrap and table */
+@media (max-width: 768px) {
+    .about-text-wrap img {
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .about-text-wrap, .table-container {
+        margin-bottom: 20px;
+    }
+    .table-container {
+        overflow-x: auto; /* Allow horizontal scrolling for tables */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+}
+
+/* Final spacing adjustments for about-text in carrousel.css */
+
+/* Add spacing between the schedule and the about text image */
+@media (max-width: 768px) {
+    .about-text-wrap {
+        margin-top: 20px; /* Ensure there's a gap between elements */
+    }
+}
+
+/* Fix for about section container in carrousel.css */
+
+/* Ensure proper spacing in the about section container */
+@media (max-width: 768px) {
+    .about-section {
+        margin-top: 20px; /* Add spacing above the section */
+        padding-top: 10px; /* Ensure internal spacing */
+    }
+}
+
+/* Refined fix for about section container in carrousel.css */
+
+/* Adjust spacing for about section to prevent overlap */
+@media (max-width: 768px) {
+    .about-section {
+        margin-top: 0; /* Remove top margin */
+        padding-top: 10px; /* Retain internal spacing */
+    }
+}
+
+/* Fix for about-text-wrap to avoid overlap with the table */
+
+@media (max-width: 768px) {
+    .about-text-wrap {
+        margin-bottom: 40px; /* Add sufficient bottom margin to prevent overlap */
+    }
+    .about-text-wrap img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Fix for image display in about-text-wrap */
+
+@media (max-width: 768px) {
+    .about-text-wrap img {
+        display: inline-block; /* Adjust display to avoid layout issues */
+        margin: 0 auto; /* Center the image if necessary */
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Remove padding-bottom from section2 and hide image on mobile */
+
+@media (max-width: 768px) {
+    .section2 {
+        padding-bottom: 0; /* Remove padding-bottom */
+    }
+    .about-text-wrap img {
+        display: none; /* Hide the image on mobile devices */
+    }
+}
+
+/* Remove padding-bottom from .section-padding and hide .about-text-info on mobile */
+
+@media screen and (max-width: 991px) {
+    .section-padding {
+        padding-bottom: 0; /* Remove padding-bottom */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text-info {
+        display: none; /* Hide about-text-info on mobile devices */
+    }
+}
+
+/* Ensure .about-text-info is hidden and fix the gap issue */
+
+@media (max-width: 768px) {
+    .about-text-info {
+        display: none !important; /* Ensure the container is completely hidden */
+    }
+    .about-text-wrap {
+        margin-bottom: 0; /* Remove unnecessary margin at the bottom */
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-padding {
+        padding-bottom: 0 !important; /* Ensure no padding-bottom in section-padding */
+    }
+}

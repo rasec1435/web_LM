@@ -129,3 +129,28 @@
     visibility: visible;
     opacity: 1;
 }
+
+/* Responsive fixes in portada.css */
+
+/* Fix for Twitch retransmission */
+@media (max-width: 768px) {
+    .contenedor-twitch iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Refined responsive fixes in portada.css */
+
+/* Place Twitch retransmission above text in mobile view */
+@media (max-width: 768px) {
+    .contenedor-twitch {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-twitch iframe {
+        order: -1; /* Move the iframe above the text */
+        width: 100%;
+        height: auto;
+    }
+}
