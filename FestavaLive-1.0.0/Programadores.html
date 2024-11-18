@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pagina web sobre el programa de radio del CPIFP Los Enlaces">
+    <meta name="author" content="Iria,Nonso,Cesar y Aaron">
+    <link rel="icon" href="images/logo2-modified.png" type="image/x-icon">
+
+    <title>Programadores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/programadores.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+</head>
+
+<main>
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-person custom-icon me-2"></i>
+                        <strong class="text-dark">La mejor radio 2024</strong>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                BraulauRadio+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">Programa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="Programadores.html">Sobre nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Horario</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card_list swiper-wrapper">
+                    <div class="card_item swiper-slide">
+                        <img src="images/nonso.png" alt="User image" class="user-image">
+                        <h2 class="user_name">Nonso Edoka</h2>
+                        <p class="user_profession">Desarrollador Web</p>
+                        <button class="message_button" onclick="mostrarTarjeta('infoParte1')">Ver Más</button>
+                    </div>
+
+                    <div class="card_item swiper-slide">
+                        <img src="images/iria.jpg" alt="User image" class="user-image">
+                        <h2 class="user_name">Iria Álvarez</h2>
+                        <p class="user_profession">Desarrolladora Web</p>
+                        <button class="message_button" onclick="mostrarTarjeta('infoParte2')">Ver Más</button>
+                    </div>
+
+                    <div class="card_item swiper-slide">
+                        <img src="images/cesar.png" alt="User image" class="user-image">
+                        <h2 class="user_name">César Belenguer</h2>
+                        <p class="user_profession">Desarrollador Web</p>
+                        <button class="message_button" onclick="mostrarTarjeta('infoParte3')">Ver Más</button>
+                    </div>
+
+                    <div class="card_item swiper-slide">
+                        <img src="images/aaron.jpg" alt="User image" class="user-image">
+                        <h2 class="user_name">Aaron </h2>
+                        <p class="user_profession">Desarrollador Web</p>
+                        <button class="message_button" onclick="mostrarTarjeta('infoParte4')">Ver Más</button>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+            <div id="infoParte1" class="tarjeta-informativa">
+                <h2>Nonso Edoka</h2>
+                <p>Esta es la información de la Parte 1.</p>
+                <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+            </div>
+            <div id="infoParte2" class="tarjeta-informativa">
+                <h2>Información Parte 2</h2>
+                <p>Esta es la información de la Parte 2.</p>
+                <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+            </div>
+            <div id="infoParte3" class="tarjeta-informativa">
+                <h2>Información Parte 3</h2>
+                <p>Esta es la información de la Parte 3.</p>
+                <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+            </div>
+            <div id="infoParte4" class="tarjeta-informativa">
+                <h2>Información Parte 4</h2>
+                <p>Esta es la información de la Parte 4.</p>
+                <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+            </div>
+        </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="js/script.js"></script>
+        <script>
+            // Función para mostrar la tarjeta informativa
+            function mostrarTarjeta(id) {
+                document.getElementById(id).style.display = 'block';
+                document.getElementById('fondoOscuro').style.display = 'block';
+            }
+
+            // Función para cerrar la tarjeta informativa
+            function cerrarTarjeta() {
+                const tarjetas = document.querySelectorAll('.tarjeta-informativa');
+                tarjetas.forEach(tarjeta => tarjeta.style.display = 'none');
+                document.getElementById('fondoOscuro').style.display = 'none';
+            }
+        </script>
+</main>
+</body>
+
+</html>

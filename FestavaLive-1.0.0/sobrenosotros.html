@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programadores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/programadores.css">
+</head>
+
+<body>
+    <div class="container swiper">
+        <div class="slider-wrapper">
+            <div class="card_list swiper-wrapper">
+                <div class="card_item swiper-slide">
+                    <img src="images/Angela.jpg" alt="User image" class="user-image">
+                    <h2 class="user_name">Angela</h2>
+                    <p class="user_profession">Desarrolladora Web</p>
+                    <button class="message_button" onclick="mostrarTarjeta('infoParte2')">Ver Más</button>
+                </div>
+
+                <div class="card_item swiper-slide">
+                    <img src="images/Arthur.jpg" alt="User image" class="user-image">
+                    <h2 class="user_name">Arthur</h2>
+                    <p class="user_profession">Desarrolladora Web</p>
+                    <button class="message_button" onclick="mostrarTarjeta('infoParte2')">Ver Más</button>
+                </div>
+
+                <div class="card_item swiper-slide">
+                    <img src="images/Dio.jpg" alt="User image" class="user-image">
+                    <h2 class="user_name">Dio</h2>
+                    <p class="user_profession">Desarrollador Web</p>
+                    <button class="message_button" onclick="mostrarTarjeta('infoParte3')">Ver Más</button>
+                </div>
+
+                <div class="card_item swiper-slide">
+                    <img src="images/Jose.jpg" alt="User image" class="user-image">
+                    <h2 class="user_name">Jose Luis </h2>
+                    <p class="user_profession">Desarrollador Web</p>
+                    <button class="message_button" onclick="mostrarTarjeta('infoParte4')">Ver Más</button>
+                </div>
+
+                <div class="card_item swiper-slide">
+                    <img src="images/Samuel.jpg" alt="User image" class="user-image">
+                    <h2 class="user_name">Samuel </h2>
+                    <p class="user_profession">Desarrollador Web</p>
+                    <button class="message_button" onclick="mostrarTarjeta('infoParte4')">Ver Más</button>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+        <div id="infoParte1" class="tarjeta-informativa">
+            <h2>Nonso Edoka</h2>
+            <p>Esta es la información de la Parte 1.</p>
+            <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+        </div>
+        <div id="infoParte2" class="tarjeta-informativa">
+            <h2>Información Parte 2</h2>
+            <p>Esta es la información de la Parte 2.</p>
+            <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+        </div>
+        <div id="infoParte3" class="tarjeta-informativa">
+            <h2>Información Parte 3</h2>
+            <p>Esta es la información de la Parte 3.</p>
+            <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+        </div>
+        <div id="infoParte4" class="tarjeta-informativa">
+            <h2>Información Parte 4</h2>
+            <p>Esta es la información de la Parte 4.</p>
+            <button class="boton-cerrar" onclick="cerrarTarjeta()">Cerrar</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Función para mostrar la tarjeta informativa
+        function mostrarTarjeta(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById('fondoOscuro').style.display = 'block';
+        }
+
+        // Función para cerrar la tarjeta informativa
+        function cerrarTarjeta() {
+            const tarjetas = document.querySelectorAll('.tarjeta-informativa');
+            tarjetas.forEach(tarjeta => tarjeta.style.display = 'none');
+            document.getElementById('fondoOscuro').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
