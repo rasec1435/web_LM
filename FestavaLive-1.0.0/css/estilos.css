@@ -1,0 +1,78 @@
+html, body {
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.discos {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: 0;
+    flex-direction: column;
+}
+
+.music-channels {
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+}
+.music-channels h2{
+   color: white;
+}
+.channel {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.album-cover {
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.track-info {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.track-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #fff;
+    font-style: bold;
+    background: #121212;
+}
+
+.track-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #fff;
+    background: #121212;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.channel-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
