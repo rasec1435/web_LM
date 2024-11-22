@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Music Player With Lyrics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo2-modified.png" type="image/x-icon">
+</head>
+
+<body style="background-color: #121212">
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12 col-12 d-flex flex-wrap">
+          <p class="d-flex me-4 mb-0">
+            <i class="bi-person custom-icon me-2"></i>
+            <strong class="text-dark">La mejor radio 2024</strong>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        BraulauRadio+
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_2">Programa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_4">Horario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="formulario.html">Formulario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="lyrics-section">
+      <div class="lyrics"></div>
+    </div>
+
+    <div class="player-section">
+      <div class="album-cover">
+        <img src="images/icon.jpg" alt="Album Cover" />
+      </div>
+
+      <div class="player">
+        <div class="left" style="background-image: url(images/icon.jpg);"></div>
+        <div class="right">
+          <div class="top">
+            <p class="songs">
+              Centimeter
+              <br />The Peggies (Kanojo - Okarishimasu OST SoundTrack Opening)
+            </p>
+          </div>
+          <div class="bottom">
+            <video controlslist="nodownload" controls="" _autoplay="" name="media" oncontextmenu="return false;">
+              <source src="audios/thepeggies.mp3" type="audio/mp3" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="language-selector">
+        <label for="language">Choose Language:</label>
+        <select id="language">
+          <option value="es">Spanish</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <!-- Puedes agregar más idiomas aquí -->
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="module" src="js/scriptT.js"></script>
+</body>
+
+</html>
