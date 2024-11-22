@@ -296,7 +296,7 @@ body .player .left {
     width: 200px;
     height: 200px;
     /* background-image: url("icon.jpg"); */
-    background-size: contain;
+    background-size:cover;
     background-position: center;
     border-top-left-radius: 30px;
 }

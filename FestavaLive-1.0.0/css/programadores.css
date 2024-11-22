@@ -3,7 +3,8 @@
   justify-content: center;
 }
 section {
-  padding-bottom: 110px;
+  padding-bottom: 160px;
+  padding-top: 100px;
 } 
 section .container{
   border-bottom: 20px;
