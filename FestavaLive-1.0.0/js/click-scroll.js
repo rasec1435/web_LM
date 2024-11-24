@@ -1,37 +1,24 @@
-//jquery-click-scroll
-//by syamsul'isul' Arifin
+$('.click-scroll').each(function (index) {
+    $(this).click(function (e) {
+        var href = $(this).attr('href');
 
-var sectionArray = [1, 2, 3, 4, 5, 6];
+        // Si el href no empieza con #, es un enlace externo
+        if (!href.startsWith('#')) {
+            return; // Permitir la navegación normal
+        }
 
-$.each(sectionArray, function(index, value){
-          
-     $(document).scroll(function(){
-         var offsetSection = $('#' + 'section_' + value).offset().top - 83;
-         var docScroll = $(document).scrollTop();
-         var docScroll1 = docScroll + 1;
-         
-        
-         if ( docScroll1 >= offsetSection ){
-             $('.navbar-nav .nav-item .nav-link').removeClass('active');
-             $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');  
-             $('.navbar-nav .nav-item .nav-link').eq(index).addClass('active');
-             $('.navbar-nav .nav-item .nav-link').eq(index).removeClass('inactive');
-         }
-         
-     });
-    
-    $('.click-scroll').eq(index).click(function(e){
-        var offsetClick = $('#' + 'section_' + value).offset().top - 83;
+        // Si el href empieza con #, prevenir el comportamiento por defecto y hacer scroll
         e.preventDefault();
+        var offsetClick = $(href).offset().top - 83;
+
         $('html, body').animate({
-            'scrollTop':offsetClick
-        }, 300)
+            scrollTop: offsetClick
+        }, 300);
     });
-    
 });
 
-$(document).ready(function(){
-    $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');    
+$(document).ready(function () {
+    $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');
     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
 });

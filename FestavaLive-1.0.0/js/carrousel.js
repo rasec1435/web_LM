@@ -59,22 +59,44 @@ fila.addEventListener('mouseleave', () => {
 	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
 
-// MODAL
-document.querySelectorAll(".pelicula").forEach(pelicula => {
-    pelicula.addEventListener("click", function() {
-        const videoSrc = this.getAttribute("data-video");
-        const modal = document.getElementById("videoModal");
-        const modalVideo = document.getElementById("modalVideo");
-        
-        modalVideo.src = videoSrc; // Establece el video fuente
-        modal.style.display = "block"; // Muestra el modal
+document.addEventListener('DOMContentLoaded', () => {
+    const peliculas = document.querySelectorAll('.pelicula');
+
+    peliculas.forEach(pelicula => {
+        pelicula.addEventListener("click", function (e) {
+            e.preventDefault();
+            const videoSrc = this.getAttribute("data-video");
+
+            // Crear un overlay para el video
+            const videoOverlay = document.createElement('div');
+            videoOverlay.classList.add('video-overlay');
+            videoOverlay.innerHTML = `
+                <div class="video-content" style="position: relative; width: 90%; max-width: 800px;">
+                    <button class="close-btn" style="position: absolute; top: 10px; right: 10px; background: #ffffff; color: #000; font-size: 24px; border: none; cursor: pointer; padding: 5px 10px; border-radius: 50%; z-index: 2002;">&times;</button>
+                    <video controls autoplay style="width: 100%; height: auto;">
+                        <source src="${videoSrc}" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            `;
+
+            // Añadir el overlay al body
+            document.body.appendChild(videoOverlay);
+
+            // Añadir evento para cerrar el video
+            const closeButton = videoOverlay.querySelector('.close-btn');
+            closeButton.addEventListener('click', () => {
+                document.body.removeChild(videoOverlay);
+            });
+
+            // Añadir evento para cerrar con tecla ESC
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    if (document.body.contains(videoOverlay)) {
+                        document.body.removeChild(videoOverlay);
+                    }
+                }
+            });
+        });
     });
 });
-
-function cerrarModal() {
-    const modal = document.getElementById("videoModal");
-    const modalVideo = document.getElementById("modalVideo");
-    
-    modal.style.display = "none"; // Oculta el modal
-    modalVideo.src = ""; // Detiene el video
-}
