@@ -1,4 +1,3 @@
-
 /*
 
 TemplateMo 583 Festava Live
@@ -12,41 +11,41 @@ https://templatemo.com/tm-583-festava-live
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #EE5007;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
+  --white-color: #ffffff;
+  --primary-color: #F8CB2E;
+  --secondary-color: #EE5007;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #EE5007;
+  --custom-btn-bg-hover-color: #c01f27;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #B22727;
 
-  --body-font-family:             'Outfit', sans-serif;
+  --body-font-family: 'Outfit', sans-serif;
 
-  --h1-font-size:                 74px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --btn-font-size:                14px;
-  --copyright-font-size:          16px;
+  --h1-font-size: 74px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --btn-font-size: 14px;
+  --copyright-font-size: 16px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
 
 
@@ -107,7 +106,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -208,7 +207,9 @@ strong {
 .link-fx-1 .icon line:last-child {
   transform-origin: 19px 15px;
 }
-html, body {
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -236,12 +237,14 @@ html, body {
   opacity: 0.35;
 }
 
-.section-overlay + .container {
+.section-overlay+.container {
   position: relative;
 }
+
 .text-center {
   color: white;
 }
+
 .tab-content {
   background-color: var(--white-color);
   border-radius: var(--border-radius-medium);
@@ -265,26 +268,27 @@ html, body {
 .nav-tabs .nav-link:first-child {
   margin-right: 15px;
 }
-.form-control button{
+
+.form-control button {
   background-color: red;
 }
 
-.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   color: var(--primary-color);
 }
 
 .nav-tabs h5 {
-  color: red; 
+  color: red;
   margin-bottom: 0;
 }
 
 .nav-tabs .nav-link.active h5,
-.nav-tabs .nav-link:focus h5, 
+.nav-tabs .nav-link:focus h5,
 .nav-tabs .nav-link:hover h5 {
   color: black;
 }
@@ -295,165 +299,179 @@ html, body {
 .contenedor-twitch {
   width: 90%;
   display: grid;
-  grid-template-columns: 1fr auto; /* Dos columnas: una para el texto y otra para el iframe */
-  gap: 20px; /* Espacio entre las columnas */
-  align-items: start;    
+  grid-template-columns: 1fr auto;
+  /* Dos columnas: una para el texto y otra para el iframe */
+  gap: 20px;
+  /* Espacio entre las columnas */
+  align-items: start;
 }
+
 .retransmision-principal {
-font-size: 16px;
-min-height: 40.62em;
-color: #fff;
-background: linear-gradient(rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/banner.png);
-background-position: center center;
-padding-top: 100px;
-padding-bottom: 170px;
-background-size: cover;
-display: flex;
-align-items: end;
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/banner.png);
+  background-position: center center;
+  padding-top: 100px;
+  padding-bottom: 170px;
+  background-size: cover;
+  display: flex;
+  align-items: end;
 }
+
 .cuadro-rojo {
-width: 550px; /* Ancho fijo para el iframe */
-height: 370px; /* Altura fija para el iframe */
-background-color: #e74c3c; /* Fondo rojo opcional */
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 8px;
-margin-right: 50px;
-overflow: hidden;
+  width: 550px;
+  /* Ancho fijo para el iframe */
+  height: 370px;
+  /* Altura fija para el iframe */
+  background-color: #e74c3c;
+  /* Fondo rojo opcional */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 50px;
+  overflow: hidden;
 }
+
 #twitch-embed iframe {
-width: 100% !important;
-height: 400px !important;
+  width: 100% !important;
+  height: 400px !important;
 }
-/* 
-.cuadro-rojo twitch-embed {
-width: 550px;
-height: 100%;
-border-radius: 8px;
-} */
+
 .retransmision-principal .contenedor-twitch {
-margin: 0 auto;
-margin-bottom: 6.25em;
+  margin: 0 auto;
+  margin-bottom: 6.25em;
 }
 
 
-.retransmision-principal .contenedor-twitch h3,p{
-color: white;
+.retransmision-principal .contenedor-twitch h3,
+p {
+  color: white;
 }
+
 #twitch-embed {
-width: 100%;
-max-width: 800px;
-height: 450px; /* Ajusta la altura del reproductor de Twitch */
-border-radius: 8px;
-overflow: hidden;
-margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  /* Ajusta la altura del reproductor de Twitch */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
 }
 
 .retransmision-principal .titulo img {
-width: 300px;
+  width: 300px;
 }
 
 .retransmision-principal .descripcion {
-font-family: "Funnel Display", sans-serif;
-font-optical-sizing: auto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 1.75em;
-max-width: 50%;
-margin-bottom: 1.25em;
-flex: 1;
-margin-right: 20px; /* Añade espacio entre el texto y el iframe */
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+  flex: 1;
+  margin-right: 20px;
+  /* Añade espacio entre el texto y el iframe */
 }
 
 .retransmision-principal .boton {
-background: rgba(193,7,30, 0.9);
-border: none;
-border-radius: 0.31em;
-padding: 0.93em 1.87em;
-color: #fff;
-margin-top: 20px;
-cursor: pointer;
-transition: .3s ease all;
-font-size: 1.12em;
+  background: rgba(193, 7, 30, 0.9);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
 }
+
 .retransmision-principal .boton2 {
-background: rgba(86,77,77, 0.9);
-border: none;
-border-radius: 0.31em;
-padding: 0.93em 1.87em;
-color: #fff;
-margin-top: 20px;
-cursor: pointer;
-transition: .3s ease all;
-font-size: 1.12em;
+  background: rgba(86, 77, 77, 0.9);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
 }
+
 .retransmision-principal .boton:hover {
-background: #fff;
-color: #000;
+  background: #fff;
+  color: #000;
 }
+
 .retransmision-principal .boton2:hover {
-background: #fff;
-color: #000;
+  background: #fff;
+  color: #000;
 }
+
 .toast {
-visibility: hidden;
-min-width: 250px;
-margin-left: -125px;
-background-color: #333;
-color: #fff;
-text-align: center;
-border-radius: 5px;
-padding: 10px;
-position: fixed;
-z-index: 1;
-left: 50%;
-bottom: 30px;
-font-size: 17px;
-opacity: 0;
-transition: opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .toast.show {
-visibility: visible;
-opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 
 .contenedor {
   padding-top: 20px;
-width: 90%;
-margin: auto;
+  width: 90%;
+  margin: auto;
 }
+
 .contenedor-titulo-controles {
   display: flex;
   justify-content: space-between;
   align-items: end;
   padding-top: 20px;
-  
+
 }
 
-.contenedor-titulo-controles h3{
+.contenedor-titulo-controles h3 {
   color: #fff;
   font-size: 30px;
 }
 
-.contenedor-titulo-controles .indicadores button{
+.contenedor-titulo-controles .indicadores button {
   color: #fff;
   height: 3px;
   width: 10px;
   cursor: pointer;
   border: none;
   margin-right: 2px;
-  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.7); /* Añade una sombra blanca */
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.7);
+  /* Añade una sombra blanca */
 
 }
 
-.contenedor-titulo-controles .indicadores button:hover, 
+.contenedor-titulo-controles .indicadores button:hover,
 .contenedor-titulo-controles .indicadores button.activo {
-background: red;
+  background: red;
 }
+
 /*---------------------------------------
   CARROUSEL PELICULAS               
 -----------------------------------------*/
@@ -465,11 +483,13 @@ background: red;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9); /* Fondo oscuro opaco */
+  background: rgba(0, 0, 0, 0.9);
+  /* Fondo oscuro opaco */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Superposición sobre todo el contenido */
+  z-index: 9999;
+  /* Superposición sobre todo el contenido */
 }
 
 /* Contenedor del video */
@@ -477,7 +497,8 @@ background: red;
   position: relative;
   width: 90%;
   max-width: 800px;
-  background: #000; /* Fondo negro para el video */
+  background: #000;
+  /* Fondo negro para el video */
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -498,22 +519,27 @@ background: red;
 }
 
 
-.peliculas-recomendadas{
+.peliculas-recomendadas {
   background-color: #121212;
   width: 100%;
-  margin: 0; /* Margen superior e inferior */
-  padding: 0 25px; /* Padding en los laterales para crear espacio */
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-  
+  margin: 0;
+  /* Margen superior e inferior */
+  padding: 0 25px;
+  /* Padding en los laterales para crear espacio */
+  box-sizing: border-box;
+  /* Asegura que el padding no afecte el ancho total */
+
 }
 
 .peliculas-recomendadas .contenedor-principal {
   display: flex;
   align-items: center;
   position: relative;
-  max-width: 100%; /* Asegura que el contenedor se extienda al ancho completo */
-  margin: 0 auto; /* Centra el contenido */
-  padding: 0 10px; 
+  max-width: 100%;
+  /* Asegura que el contenedor se extienda al ancho completo */
+  margin: 0 auto;
+  /* Centra el contenido */
+  padding: 0 10px;
   padding-bottom: 20px;
 }
 
@@ -521,7 +547,7 @@ background: red;
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
   position: absolute;
   border: none;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   font-size: 40px;
   height: 50%;
   top: calc(50% - 25%);
@@ -535,11 +561,13 @@ background: red;
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
 .peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
-background: rgba(0,0,0, .9);
+  background: rgba(0, 0, 0, .9);
 }
+
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
   left: 0;
 }
+
 .peliculas-recomendadas .contenedor-principal .flecha-derecha {
   right: 0;
 }
@@ -549,28 +577,29 @@ background: rgba(0,0,0, .9);
   width: 100%;
   padding: 20px 0;
   overflow: hidden;
-  scroll-behavior: smooth; /* Permite establecer el comportamiento del scroll*/
+  scroll-behavior: smooth;
+  /* Permite establecer el comportamiento del scroll*/
 }
 
-.peliculas-recomendadas .contenedor-carousel  .carousel{ 
+.peliculas-recomendadas .contenedor-carousel .carousel {
   display: flex;
   flex-wrap: nowrap;
 
 }
 
-.peliculas-recomendadas .contenedor-carousel  .carousel .pelicula {
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
   min-width: 20%;
   transition: .3s ease all;
-  box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-  
-} 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
 
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
-transform: scale(1.2);
-transform-origin: center;
 }
 
-.peliculas-recomendadas .contenedor-carousel  .carousel .pelicula img {
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
   width: 100%;
   vertical-align: top;
 }
@@ -691,21 +720,29 @@ transform-origin: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .navbar .nav-link.button-style {
   background-color: red;
   color: white;
-  border-radius: 25px; /* Bordes redondeados */
-  padding: 10px 20px;  /* Espacio interior para hacer que parezca un botón */
+  border-radius: 25px;
+  /* Bordes redondeados */
+  padding: 10px 20px;
+  /* Espacio interior para hacer que parezca un botón */
   text-align: center;
-  text-decoration: none; /* Sin subrayado */
-  transition: background-color 0.3s ease; /* Animación para el cambio de color */
+  text-decoration: none;
+  /* Sin subrayado */
+  transition: background-color 0.3s ease;
+  /* Animación para el cambio de color */
 }
 
 .navbar .nav-link.button-style:hover {
-  background-color: darkred; /* Color más oscuro al pasar el cursor */
-  color: white; /* Asegurarse de que el texto sea legible */
+  background-color: darkred;
+  /* Color más oscuro al pasar el cursor */
+  color: white;
+  /* Asegurarse de que el texto sea legible */
 }
-.navbar-nav .nav-link.active, 
+
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: #c1071e;
 }
@@ -825,6 +862,7 @@ transform-origin: center;
   border-radius: var(--border-radius-medium);
   display: block;
 }
+
 .about-section .text-white {
   font-family: "Funnel Display", sans-serif;
   font-optical-sizing: auto;
@@ -865,13 +903,14 @@ transform-origin: center;
 -----------------------------------------*/
 .schedule-section {
   /* background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg'); */
-  background:#121212;
+  background: #121212;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .table-responsive {
-	filter: drop-shadow(2px 2px 4px #606060);
+  filter: drop-shadow(2px 2px 4px #606060);
 }
 
 .schedule-table {
@@ -888,9 +927,11 @@ transform-origin: center;
 .schedule-table thead th {
   background-color: #ba0c0c;
 }
-.schedule-table th{
+
+.schedule-table th {
   font-size: 30px;
 }
+
 .schedule-table th,
 .schedule-table tr,
 .schedule-table td {
@@ -908,7 +949,7 @@ transform-origin: center;
   border-bottom-color: transparent;
 }
 
-.schedule-table th + td {
+.schedule-table th+td {
   border-bottom: 1;
 }
 
@@ -950,6 +991,7 @@ transform-origin: center;
   height: 30vh;
   text-align: center;
 }
+
 .horario p {
   color: white;
   font-size: 25px;
@@ -1025,7 +1067,7 @@ transform-origin: center;
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .site-footer-link,
@@ -1089,7 +1131,7 @@ transform-origin: center;
   display: block;
 }
 
-.social-icon-link span:hover::before{
+.social-icon-link span:hover::before {
   animation: spinAround 2s linear infinite;
 }
 
@@ -1097,6 +1139,7 @@ transform-origin: center;
   from {
     transform: rotate(0deg)
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -1114,13 +1157,16 @@ transform-origin: center;
   justify-content: center;
   padding: 17px;
 }
+
 section {
   padding-bottom: 160px;
   padding-top: 100px;
-} 
-section .container{
+}
+
+section .container {
   border-bottom: 20px;
 }
+
 .card-item {
   border: 0.1em solid #fb7e02;
   border-radius: 2%;
@@ -1162,9 +1208,11 @@ section .container{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-.card-item .overlay p{
+
+.card-item .overlay p {
   color: white;
 }
+
 .card-item:hover .overlay {
   opacity: 1;
 }
@@ -1188,32 +1236,32 @@ section .container{
 
 /* Designers Section Styles */
 .designers-section {
-    margin-top: 50px;
-    padding: 30px 0;
-    background-color: #121212;
-    text-align: center;
+  margin-top: 50px;
+  padding: 30px 0;
+  background-color: #121212;
+  text-align: center;
 }
 
 .designers-title {
-    font-size: 32px;
-    color: var(--light-color);
-    margin-bottom: 20px;
+  font-size: 32px;
+  color: var(--light-color);
+  margin-bottom: 20px;
 }
 
 .designers-link {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: var(--primary-color);
-    color: var(--dark-color);
-    text-decoration: none;
-    border-radius: var(--border-radius-medium);
-    transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  text-decoration: none;
+  border-radius: var(--border-radius-medium);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .designers-link:hover {
-    background-color: var(--custom-btn-bg-hover-color);
-    color: var(--white-color);
+  background-color: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
 }
 
 
@@ -1222,236 +1270,138 @@ section .container{
 
 
 
-
-/* Styles for Medium Screens (Max Width: 768px) */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: row;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
-    .peliculas-recomendadas .contenedor-carousel {
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .peliculas-recomendadas .carousel .pelicula {
-        min-width: 30%;
-    }
-
-    .about-section {
-        padding: 20px;
-    }
-
-    .about-text-wrap {
-        margin-bottom: 20px;
-    }
-}
-
-/* Styles for Large Screens (Min Width: 769px) */
-@media (min-width: 769px) {
-    .retransmision-principal {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .contenedor-twitch {
-        grid-template-columns: 1fr auto;
-    }
-
-    .peliculas-recomendadas .contenedor-carousel {
-        display: flex;
-    }
-
-    .peliculas-recomendadas .carousel .pelicula {
-        min-width: 20%;
-    }
-
-    .about-section .text-white {
-        font-size: 1rem;
-    }
-
-    .schedule-section .schedule-table th {
-        padding: 20px;
-    }
-}
-/* Responsivo para index.html */
-
-/* General Styles for Small Screens (Max Width: 576px) */
 @media (max-width: 576px) {
+  /* Ajustes generales */
   body {
-      font-size: 14px;
-      line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Navbar */
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .navbar-collapse::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+  }
+
+  .navbar-collapse::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .navbar-nav {
-      flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
   }
 
-  .navbar-brand {
-      font-size: 1.2rem;
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
   }
 
-  .retransmision-principal {
-      flex-direction: column;
-      padding: 20px;
-      text-align: center;
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .retransmision-principal .descripcion {
-      max-width: 100%;
-      margin: 0 auto;
-  }
-
-  .contenedor-twitch {
-      grid-template-columns: 1fr;
-      gap: 10px;
-  }
-
-  #twitch-embed {
-      height: 450px;
-      padding-top: 20px;
-  }
-
-  .peliculas-recomendadas .contenedor-principal {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .peliculas-recomendadas .carousel {
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-
-  .peliculas-recomendadas .carousel .pelicula {
-      min-width: 40%;
-      margin-bottom: 10px;
-  }
-
-  .about-section {
-      height: auto;
-  }
-
-  .about-image {
-      width: 100%;
-  }
-
-  .schedule-section .table-responsive {
-      overflow-x: auto;
-  }
-}
-
-/* Styles for Medium Screens (Max Width: 768px) */
-@media (max-width: 768px) {
-  .navbar-nav {
-      flex-direction: row;
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .navbar-toggler {
-      display: block;
+    color: black;
+    border: none;
   }
 
-  .peliculas-recomendadas .contenedor-carousel {
-      overflow-x: auto;
-      white-space: nowrap;
-  }
-
-  .peliculas-recomendadas .carousel .pelicula {
-      min-width: 30%;
-  }
-
-  .about-section {
-      padding: 20px;
-  }
-
-  .about-text-wrap {
-      margin-bottom: 20px;
-  }
-}
-
-/* Styles for Large Screens (Min Width: 769px) */
-@media (min-width: 769px) {
+  /* Ajustes para retransmisión */
   .retransmision-principal {
-      display: flex;
-      justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    padding-top: 60px;
   }
 
-  .contenedor-twitch {
-      grid-template-columns: 1fr auto;
+  .retransmision-principal .descripcion {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
-  .peliculas-recomendadas .contenedor-carousel {
-      display: flex;
-  }
-
-  .peliculas-recomendadas .carousel .pelicula {
-      min-width: 20%;
-  }
-
-  .about-section .text-white {
-      font-size: 1rem;
-  }
-
-  .schedule-section .schedule-table th {
-      padding: 20px;
-  }
-}
-@media (max-width: 576px) {
-  /* Eliminar el about-text-info */
-  .about-text-info {
-      display: none !important;
-  }
-
-  /* Mostrar dos portadas a la vez en el carrusel */
-  .peliculas-recomendadas .carousel {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-      gap: 10px; /* Espacio entre columnas */
-      justify-content: center;
-  }
-
-  .peliculas-recomendadas .carousel .pelicula img {
-      width: 100%;
-      height: auto;
-  }
-
-  /* Ajustar el tamaño del contenedor de Twitch */
   .retransmision-principal .contenedor-twitch {
-      display: flex;
-      flex-direction: column; /* Organizar verticalmente */
-      align-items: center;
-      justify-content: flex-start; /* Comienza desde arriba */
-      padding: 20px; /* Separación adicional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px;
   }
 
-  /* Hacer que el iframe ocupe todo el espacio del cuadro rojo */
   .retransmision-principal .contenedor-twitch .cuadro-rojo {
-      width: 90%; /* Reducir ancho en pantallas pequeñas */
-      height: 230px; /* Ajustar altura al contenido */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      margin-left: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 0px;
   }
 
   .retransmision-principal .contenedor-twitch .cuadro-rojo iframe {
-      width: 100%; /* Ocupar todo el ancho */
-      height: 100%; /* Ocupar todo el alto */
-      border: none; /* Eliminar bordes */
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 
-  /* Espaciado entre botones y el contenedor */
-  .retransmision-principal .boton, 
+  .retransmision-principal .boton,
   .retransmision-principal .boton2 {
-      margin-bottom: 10px; /* Espaciado entre botones */
+    margin-bottom: 10px;
   }
 
-  /* Agregar padding-top para separar el navbar del contenido */
-  .retransmision-principal {
-      padding-top: 60px; /* Separación adicional */
+  /* Películas recomendadas */
+  .peliculas-recomendadas .carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .peliculas-recomendadas .carousel .pelicula img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* About Section */
+  .about-section {
+    height: auto;
+  }
+
+  .about-text-info {
+    display: none !important;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  /* Schedule Section */
+  .schedule-section .table-responsive {
+    overflow-x: auto;
   }
 }
