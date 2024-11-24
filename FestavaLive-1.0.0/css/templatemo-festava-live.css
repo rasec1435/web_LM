@@ -1107,528 +1107,12 @@ transform-origin: center;
   RESPONSIVE STYLES               
 -----------------------------------------*/
 
-/* Responsive design rules */
-
-/* General: For small devices */
-@media (max-width: 768px) {
-  body {
-      font-size: 14px;
-  }
-  .discos {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-  }
-  .music-channels {
-      width: 100%;
-      margin-top: 10px;
-  }
-  .channel {
-      width: 100%;
-      margin-bottom: 10px;
-  }
-  .contenedor-twitch {
-      grid-template-columns: 1fr;
-      gap: 10px;
-  }
-  .retransmision-principal {
-      font-size: 14px;
-      min-height: auto;
-  }
-  .contenedor {
-      padding: 10px;
-  }
-}
-
-/* For tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
-      font-size: 16px;
-  }
-  .music-channels {
-      width: 90%;
-  }
-  .contenedor-twitch {
-      grid-template-columns: 1fr auto;
-  }
-}
-
-/* Responsive fixes */
-
-/* Fix for image inside 'titulo' in 'retransmision principal' */
-@media (max-width: 768px) {
-  .retransmision-principal img {
-      width: 100%;
-      height: auto;
-  }
-}
-
-/* Fix for Twitch retransmission */
-@media (max-width: 768px) {
-  .contenedor-twitch iframe {
-      width: 100%;
-      height: auto;
-  }
-}
-
-/* Fix for about text wrap and info images */
-@media (max-width: 768px) {
-  .about-text-wrap img,
-  .about-text-info img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-  }
-}
-
-/* Fix for tables */
-@media (max-width: 768px) {
-  table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12px;
-  }
-  table th, table td {
-      padding: 10px;
-      text-align: left;
-  }
-  table th {
-      background-color: #f4f4f4;
-  }
-  table td {
-      word-wrap: break-word;
-  }
-}
-@media screen and (max-width: 991px) {
-  h1 {
-    font-size: 62px;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-
-  h3 {
-    font-size: 32px;
-  }
-
-  h4 {
-    font-size: 28px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
-  h6 {
-    font-size: 18px;
-  }
-
-  .section-padding {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .navbar {
-    background-color: var(--dark-color);
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    padding-bottom: 30px;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
-  }
-
-  .hero-section {
-    padding-top: 150px;
-  }
-
-  .pricing-thumb {
-    padding: 35px;
-  }
-
-  .schedule-table h3 {
-    font-size: 22px;
-  }
-
-  .schedule-table th {
-    padding: 20px;
-  }
-
-  .schedule-table tr, 
-  .schedule-table td {
-    padding: 25px;
-  }
-
-  .ticket-section {
-    padding-top: 130px;
-  }
-
-  .ticket-form {
-    padding: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .custom-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 52px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: 26px;
-  }
-
-  h4 {
-    font-size: 22px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-}
-
-
-/* Responsive fixes in templatemo-festava-live.css */
-
-/* Fix for image inside 'titulo' in 'retransmision principal' */
-@media (max-width: 768px) {
-    .retransmision-principal img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Refined responsive fixes in templatemo-festava-live.css */
-
-/* Prevent image in 'titulo' from overlapping navigation bar in mobile view */
-@media (max-width: 768px) {
-    .retransmision-principal img {
-        width: 100%;
-        height: auto;
-        margin-top: 60px; /* Adjust to provide space below the navigation bar */
-    }
-    .retransmision-principal {
-        padding-top: 20px; /* Ensure the container accounts for additional spacing */
-    }
-}
-
-@media screen and (max-width: 800px) {
-	header .logotipo {
-		margin-bottom: 10px;
-		font-size: 30px;
-	}
-
-	header .contenedor {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.pelicula-principal {
-		font-size: 14px;
-	}
-
-	.pelicula-principal .descripcion {
-		max-width: 100%;
-	}
-
-	.peliculas-recomendadas .contenedor-carousel {
-		overflow: visible;
-	}
-
-	.peliculas-recomendadas .contenedor-carousel .carousel {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
-	}
-
-	.peliculas-recomendadas .indicadores,
-	.peliculas-recomendadas .flecha-izquierda,
-	.peliculas-recomendadas .flecha-derecha {
-		display: none;
-	}
-}
-
-
-/* Responsive fixes in carrousel.css */
-
-/* Fix for about text wrap and info images */
-@media (max-width: 768px) {
-    .about-text-wrap img,
-    .about-text-info img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-}
-
-/* Fix for tables */
-@media (max-width: 768px) {
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 12px;
-    }
-    table th, table td {
-        padding: 10px;
-        text-align: left;
-    }
-    table th {
-        background-color: #f4f4f4;
-    }
-    table td {
-        word-wrap: break-word;
-    }
-}
-
-/* Refined responsive fixes in carrousel.css */
-
-/* Prevent overlap between about text wrap and table */
-@media (max-width: 768px) {
-    .about-text-wrap img {
-        margin-bottom: 20px;
-        width: 100%;
-        height: auto;
-    }
-    .about-text-wrap, .table-container {
-        margin-bottom: 20px;
-    }
-    .table-container {
-        overflow-x: auto; /* Allow horizontal scrolling for tables */
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 12px;
-    }
-}
-
-/* Final spacing adjustments for about-text in carrousel.css */
-
-/* Add spacing between the schedule and the about text image */
-@media (max-width: 768px) {
-    .about-text-wrap {
-        margin-top: 20px; /* Ensure there's a gap between elements */
-    }
-}
-
-/* Fix for about section container in carrousel.css */
-
-/* Ensure proper spacing in the about section container */
-@media (max-width: 768px) {
-    .about-section {
-        margin-top: 20px; /* Add spacing above the section */
-        padding-top: 10px; /* Ensure internal spacing */
-    }
-}
-
-/* Refined fix for about section container in carrousel.css */
-
-/* Adjust spacing for about section to prevent overlap */
-@media (max-width: 768px) {
-    .about-section {
-        margin-top: 0; /* Remove top margin */
-        padding-top: 10px; /* Retain internal spacing */
-    }
-}
-
-/* Fix for about-text-wrap to avoid overlap with the table */
-
-@media (max-width: 768px) {
-    .about-text-wrap {
-        margin-bottom: 40px; /* Add sufficient bottom margin to prevent overlap */
-    }
-    .about-text-wrap img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Fix for image display in about-text-wrap */
-
-@media (max-width: 768px) {
-    .about-text-wrap img {
-        display: inline-block; /* Adjust display to avoid layout issues */
-        margin: 0 auto; /* Center the image if necessary */
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Remove padding-bottom from section2 and hide image on mobile */
-
-@media (max-width: 768px) {
-    .section2 {
-        padding-bottom: 0; /* Remove padding-bottom */
-    }
-    .about-text-wrap img {
-        display: none; /* Hide the image on mobile devices */
-    }
-}
-
-/* Remove padding-bottom from .section-padding and hide .about-text-info on mobile */
-
-@media screen and (max-width: 991px) {
-    .section-padding {
-        padding-bottom: 0; /* Remove padding-bottom */
-    }
-}
-
-@media (max-width: 768px) {
-    .about-text-info {
-        display: none; /* Hide about-text-info on mobile devices */
-    }
-}
-
-/* Ensure .about-text-info is hidden and fix the gap issue */
-
-@media (max-width: 768px) {
-    .about-text-info {
-        display: none !important; /* Ensure the container is completely hidden */
-    }
-    .about-text-wrap {
-        margin-bottom: 0; /* Remove unnecessary margin at the bottom */
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .section-padding {
-        padding-bottom: 0 !important; /* Ensure no padding-bottom in section-padding */
-    }
-}
-/* Responsive fixes in portada.css */
-
-/* Fix for Twitch retransmission */
-@media (max-width: 768px) {
-  .contenedor-twitch iframe {
-      width: 100%;
-      height: auto;
-  }
-}
-
-/* Refined responsive fixes in portada.css */
-
-/* Place Twitch retransmission above text in mobile view */
-@media (max-width: 768px) {
-  .contenedor-twitch {
-      display: flex;
-      flex-direction: column;
-  }
-  .contenedor-twitch iframe {
-      order: -1; /* Move the iframe above the text */
-      width: 100%;
-      height: auto;
-  }
-}
-/* Responsive design rules */
-
-/* General: For small devices */
-@media (max-width: 768px) {
-  body {
-      font-size: 14px;
-  }
-  .discos {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-  }
-  .music-channels {
-      width: 100%;
-      margin-top: 10px;
-  }
-  .channel {
-      width: 100%;
-      margin-bottom: 10px;
-  }
-  .contenedor-twitch {
-      grid-template-columns: 1fr;
-      gap: 10px;
-  }
-  .retransmision-principal {
-      font-size: 14px;
-      min-height: auto;
-  }
-  .contenedor {
-      padding: 10px;
-  }
-}
-
-/* For tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
-      font-size: 16px;
-  }
-  .music-channels {
-      width: 90%;
-  }
-  .contenedor-twitch {
-      grid-template-columns: 1fr auto;
-  }
-}
-
-/* Responsive fixes */
-
-/* Fix for image inside 'titulo' in 'retransmision principal' */
-@media (max-width: 768px) {
-  .retransmision-principal img {
-      width: 100%;
-      height: auto;
-  }
-}
-
-/* Fix for Twitch retransmission */
-@media (max-width: 768px) {
-  .contenedor-twitch iframe {
-      width: 100%;
-      height: auto;
-  }
-}
-
-/* Fix for about text wrap and info images */
-@media (max-width: 768px) {
-  .about-text-wrap img,
-  .about-text-info img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-  }
-}
-
-/* Fix for tables */
-@media (max-width: 768px) {
-  table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12px;
-  }
-  table th, table td {
-      padding: 10px;
-      text-align: left;
-  }
-  table th {
-      background-color: #f4f4f4;
-  }
-  table td {
-      word-wrap: break-word;
-  }
-}
 
 /* === Start of programadores.css === */
 .swiper-slide {
   display: flex;
   justify-content: center;
+  padding: 17px;
 }
 section {
   padding-bottom: 160px;
@@ -1730,4 +1214,244 @@ section .container{
 .designers-link:hover {
     background-color: var(--custom-btn-bg-hover-color);
     color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+/* Styles for Medium Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .peliculas-recomendadas .contenedor-carousel {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .peliculas-recomendadas .carousel .pelicula {
+        min-width: 30%;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-text-wrap {
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for Large Screens (Min Width: 769px) */
+@media (min-width: 769px) {
+    .retransmision-principal {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-twitch {
+        grid-template-columns: 1fr auto;
+    }
+
+    .peliculas-recomendadas .contenedor-carousel {
+        display: flex;
+    }
+
+    .peliculas-recomendadas .carousel .pelicula {
+        min-width: 20%;
+    }
+
+    .about-section .text-white {
+        font-size: 1rem;
+    }
+
+    .schedule-section .schedule-table th {
+        padding: 20px;
+    }
+}
+/* Responsivo para index.html */
+
+/* General Styles for Small Screens (Max Width: 576px) */
+@media (max-width: 576px) {
+  body {
+      font-size: 14px;
+      line-height: 1.5;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+  }
+
+  .navbar-brand {
+      font-size: 1.2rem;
+  }
+
+  .retransmision-principal {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .retransmision-principal .descripcion {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+
+  .contenedor-twitch {
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+
+  #twitch-embed {
+      height: 450px;
+      padding-top: 20px;
+  }
+
+  .peliculas-recomendadas .contenedor-principal {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .peliculas-recomendadas .carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .peliculas-recomendadas .carousel .pelicula {
+      min-width: 40%;
+      margin-bottom: 10px;
+  }
+
+  .about-section {
+      height: auto;
+  }
+
+  .about-image {
+      width: 100%;
+  }
+
+  .schedule-section .table-responsive {
+      overflow-x: auto;
+  }
+}
+
+/* Styles for Medium Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: row;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+
+  .peliculas-recomendadas .contenedor-carousel {
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  .peliculas-recomendadas .carousel .pelicula {
+      min-width: 30%;
+  }
+
+  .about-section {
+      padding: 20px;
+  }
+
+  .about-text-wrap {
+      margin-bottom: 20px;
+  }
+}
+
+/* Styles for Large Screens (Min Width: 769px) */
+@media (min-width: 769px) {
+  .retransmision-principal {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .contenedor-twitch {
+      grid-template-columns: 1fr auto;
+  }
+
+  .peliculas-recomendadas .contenedor-carousel {
+      display: flex;
+  }
+
+  .peliculas-recomendadas .carousel .pelicula {
+      min-width: 20%;
+  }
+
+  .about-section .text-white {
+      font-size: 1rem;
+  }
+
+  .schedule-section .schedule-table th {
+      padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  /* Eliminar el about-text-info */
+  .about-text-info {
+      display: none !important;
+  }
+
+  /* Mostrar dos portadas a la vez en el carrusel */
+  .peliculas-recomendadas .carousel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      gap: 10px; /* Espacio entre columnas */
+      justify-content: center;
+  }
+
+  .peliculas-recomendadas .carousel .pelicula img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Ajustar el tamaño del contenedor de Twitch */
+  .retransmision-principal .contenedor-twitch {
+      display: flex;
+      flex-direction: column; /* Organizar verticalmente */
+      align-items: center;
+      justify-content: flex-start; /* Comienza desde arriba */
+      padding: 20px; /* Separación adicional */
+  }
+
+  /* Hacer que el iframe ocupe todo el espacio del cuadro rojo */
+  .retransmision-principal .contenedor-twitch .cuadro-rojo {
+      width: 90%; /* Reducir ancho en pantallas pequeñas */
+      height: 230px; /* Ajustar altura al contenido */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-left: 50px;
+  }
+
+  .retransmision-principal .contenedor-twitch .cuadro-rojo iframe {
+      width: 100%; /* Ocupar todo el ancho */
+      height: 100%; /* Ocupar todo el alto */
+      border: none; /* Eliminar bordes */
+  }
+
+  /* Espaciado entre botones y el contenedor */
+  .retransmision-principal .boton, 
+  .retransmision-principal .boton2 {
+      margin-bottom: 10px; /* Espaciado entre botones */
+  }
+
+  /* Agregar padding-top para separar el navbar del contenido */
+  .retransmision-principal {
+      padding-top: 60px; /* Separación adicional */
+  }
 }

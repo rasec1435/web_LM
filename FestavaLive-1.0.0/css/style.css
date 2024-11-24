@@ -332,7 +332,7 @@ body .player .right .top {
 }
 
 .songs {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -494,4 +494,68 @@ body .player .right .bottom video {
     top: 280px;
     background: #505050;
     font-weight: bold;
+}
+
+
+
+/* Adjustments for the player section */
+body .player-section {
+    width: 40%; /* Set a fixed width for the section */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height to fit content dynamically */
+    box-sizing: border-box;
+}
+
+body .player-section .album-cover {
+    width: 100%; /* Match the width of the player section */
+    height: auto; /* Adjust the height proportionally */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+body .player-section .album-cover img {
+    width: 80%; /* Reduce image size for better alignment */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 15px; /* Add rounded corners */
+}
+
+body .player-section .player {
+    min-height: 100px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Fit the player inside the container */
+}
+
+body .player-section .player .left {
+    width: 120px; /* Adjust size for a better fit */
+    height: 120px; /* Maintain proportionality */
+}
+
+body .player-section .player .right .bottom video {
+    height: 25px; /* Set a reasonable height for the audio/video player */
+    width: 100%; /* Ensure it occupies the full width */
+}
+
+body .language-selector {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* Align with the player section width */
+}
+
+
+
+/* Ensure the audio player matches the width of the album cover */
+body .player-section .player .right .bottom video {
+    height: 25px; /* Set a reasonable height */
+    width: 80%; /* Match the width of the album cover */
+    margin: 0 auto; /* Center the audio player */
 }
