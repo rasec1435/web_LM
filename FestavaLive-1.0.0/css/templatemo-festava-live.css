@@ -1355,7 +1355,8 @@ section .container {
   }
 
   .retransmision-principal .contenedor-twitch .cuadro-rojo {
-    width: 90%;
+    /* width: 50%; */
+    /* height: 20%; */
     display: flex;
     align-items: center;
     justify-content: center;
