@@ -226,6 +226,23 @@
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+                breakpoints: {
+                    // Configuración para pantallas pequeñas
+                    0: { 
+                        slidesPerView: 1, 
+                        spaceBetween: 10 
+                    },
+                    // Configuración para pantallas medianas
+                    768: { 
+                        slidesPerView: 2, 
+                        spaceBetween: 10 
+                    },
+                    // Configuración para pantallas grandes
+                    1024: { 
+                        slidesPerView: 3, 
+                        spaceBetween: 10 
+                    },
+                },
             });
         </script>
     </main>

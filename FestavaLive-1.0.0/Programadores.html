@@ -176,21 +176,38 @@
    </div>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
    </script>
-   <script>
+<script>
     const swiper = new Swiper('.mySwiper', {
-                slidesPerView: 3,
-                spaceBetween: 10,
-                loop: true, // Habilita el carrusel circular
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-   </script>
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true, // Habilita el carrusel circular
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            // Configuración para pantallas pequeñas
+            0: { 
+                slidesPerView: 1, 
+                spaceBetween: 10 
+            },
+            // Configuración para pantallas medianas
+            768: { 
+                slidesPerView: 2, 
+                spaceBetween: 10 
+            },
+            // Configuración para pantallas grandes
+            1024: { 
+                slidesPerView: 3, 
+                spaceBetween: 10 
+            },
+        },
+    });
+</script>
   </main>
   <!-- footer -->
   <footer class="site-footer">

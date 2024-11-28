@@ -1406,3 +1406,44 @@ section .container {
     overflow-x: auto;
   }
 }
+
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+    /* Retransmisión principal */
+    .retransmision-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .retransmision-principal .contenedor-twitch {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .retransmision-principal .boton,
+    .retransmision-principal .boton2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .retransmision-principal .cuadro-rojo {
+        width: 100%;
+        height: auto;
+    }
+
+    .retransmision-principal #twitch-embed  {
+      /* width: 100% !important; */
+      height: auto !important;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+    }
+    .retransmision-principal #twitch-embed iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+}
