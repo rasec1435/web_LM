@@ -1157,6 +1157,10 @@ p {
   justify-content: center;
   padding: 17px;
 }
+.swiper-pagination {
+  position: relative;
+  margin-top: 15%;
+}
 
 section {
   padding-bottom: 160px;
@@ -1181,6 +1185,7 @@ section .container {
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
+  margin-left: 25px;
 }
 
 .card-item:hover {
@@ -1218,7 +1223,7 @@ section .container {
 }
 
 .card-item h2 {
-  font-size: 1.5vw;
+  font-size: 20px;
   text-align: center;
   color: aliceblue;
 }
