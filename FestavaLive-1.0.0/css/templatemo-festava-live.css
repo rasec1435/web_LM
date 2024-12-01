@@ -571,8 +571,12 @@ p {
   right: 0;
 }
 
+
 /* carousel*/
 .peliculas-recomendadas .contenedor-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   width: 100%;
   padding: 20px 0;
   overflow: hidden;
@@ -583,8 +587,10 @@ p {
 .peliculas-recomendadas .contenedor-carousel .carousel {
   display: flex;
   flex-wrap: nowrap;
+  padding: auto;
 
 }
+
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
   min-width: 20%;
@@ -601,6 +607,32 @@ p {
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
   width: 100%;
   vertical-align: top;
+}
+
+/* Mostrar 1 elemento por pantalla en dispositivos móviles */
+@media (max-width: 768px) {
+  .pelicula {
+      flex: 0 0 calc(60% - 2rem);
+      overflow-x:hidden; /* Oculta las imágenes fuera de la vista */
+    scroll-snap-type: x mandatory; /* Para un scroll suave y centrado */
+    position: relative; /* Para mantener la estructura */
+    width: 100%; /* Ocupa todo el ancho del dispositivo */
+    padding-left: -5%;
+    padding-right: 0%;
+    gap: 0;
+  }
+}
+
+/* Mostrar 2 elementos por pantalla en tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .titulo {
+    justify-content: center;
+  }
+  
+  .pelicula {
+     flex: 0 0 60%; /* Asegura que solo se muestre una imagen */
+  }
 }
 
 /*---------------------------------------
@@ -1381,12 +1413,12 @@ section .container {
     margin-bottom: 10px;
   }
 
-  /* Películas recomendadas */
+  /* Películas recomendadas 
   .peliculas-recomendadas .carousel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    justify-content: center;
+    justify-content: center; 
   }
 
   .peliculas-recomendadas .carousel .pelicula img {
