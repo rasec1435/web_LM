@@ -617,7 +617,7 @@ body .player-section .player {
 
 body .player-section .player .left {
     width: 120px; /* Adjust size for a better fit */
-    height: 120px; /* Maintain proportionality */
+    height: 100%; /* Maintain proportionality */
 }
 
 body .player-section .player .right .bottom video {

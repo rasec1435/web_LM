@@ -1,0 +1,86 @@
+{
+    "text": "Les réseaux sociaux montrent une image déformée d'une réalité qui n'existe pas, car la plupart des gens présentent une vie idyllique. Cette exigence vient souvent du fait de se comparer aux autres, parce que lorsque tu te compares à quelqu'un, tu ne te compares pas à ce en quoi tu es brillant, mais à ta partie vulnérable, cherchant un modèle de réussite à imiter qui souvent n'existe même pas. Tu vois sur les réseaux sociaux un modèle de réussite, tu interprètes que cette femme ou cet homme qui réussit posant avec son conjoint de manière romantique et avec trois enfants parfaitement coiffés, habillés de la même manière et souriants, tu tires des conclusions. Cette femme doit être super saine et avoir une vie super romantique, avec des enfants obéissants qui s'entendent bien et ont beaucoup de complicité, doit être super autonome. Quand moi je suis épuisé et que je ne peux plus avec ma vie, tu tires ces conclusions et tu penses, je veux être comme elle. Et tu essaies d'imiter cela en pensant que c'est le succès. Bien sûr, quand tu vois que tu n'atteins pas ce que la photo transmet, tu penses que tu n'es pas à la hauteur.",
+    "segments": [
+        {
+            "start": 0,
+            "end": 5,
+            "text": "Les réseaux sociaux montrent une image déformée d'une réalité qui n'existe pas,"
+        },
+        {
+            "start": 5,
+            "end": 10,
+            "text": "car la plupart des gens présentent une vie idyllique."
+        },
+        {
+            "start": 10,
+            "end": 15,
+            "text": "Cette exigence vient souvent du fait de se comparer aux autres,"
+        },
+        {
+            "start": 15,
+            "end": 20,
+            "text": "parce que lorsque tu te compares à quelqu'un, tu ne te compares pas à ce en quoi tu es brillant,"
+        },
+        {
+            "start": 20,
+            "end": 25,
+            "text": "mais à ta partie vulnérable, cherchant un modèle de réussite à imiter,"
+        },
+        {
+            "start": 25,
+            "end": 30,
+            "text": "qui souvent n'existe même pas."
+        },
+        {
+            "start": 30,
+            "end": 35,
+            "text": "Tu vois sur les réseaux sociaux un modèle de réussite, tu interprètes que cette femme ou cet homme qui réussit"
+        },
+        {
+            "start": 35,
+            "end": 40,
+            "text": "posant avec son conjoint de manière romantique et avec trois enfants parfaitement coiffés, habillés"
+        },
+        {
+            "start": 40,
+            "end": 45,
+            "text": "de la même manière et souriants, tu tires des conclusions."
+        },
+        {
+            "start": 45,
+            "end": 50,
+            "text": "Cette femme doit être super saine et avoir une vie super romantique,"
+        },
+        {
+            "start": 50,
+            "end": 55,
+            "text": "avec des enfants obéissants qui s'entendent bien et ont beaucoup de complicité,"
+        },
+        {
+            "start": 55,
+            "end": 60,
+            "text": "doit être super autonome. Quand moi je suis épuisé et que je ne peux plus avec ma vie,"
+        },
+        {
+            "start": 60,
+            "end": 65,
+            "text": "tu tires ces conclusions et tu penses, je veux être comme elle."
+        },
+        {
+            "start": 65,
+            "end": 70,
+            "text": "Et tu essaies d'imiter cela en pensant que c'est le succès."
+        },
+        {
+            "start": 70,
+            "end": 75,
+            "text": "Bien sûr, quand tu vois que tu n'atteins pas ce que la photo transmet,"
+        },
+        {
+            "start": 75,
+            "end": 80,
+            "text": "tu penses que tu n'es pas à la hauteur."
+        }
+    ],
+    "language": "fr"
+}
