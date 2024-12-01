@@ -324,7 +324,7 @@ body {
   /* Ancho fijo para el iframe */
   height: 370px;
   /* Altura fija para el iframe */
-  background-color: #e74c3c;
+  /* background-color: #e74c3c; */
   /* Fondo rojo opcional */
   display: flex;
   align-items: center;
@@ -371,10 +371,13 @@ p {
   font-weight: normal;
   font-size: 20px;
   line-height: 1.75em;
-  max-width: 50%;
+  max-width: 80%;
   margin-bottom: 1.25em;
   flex: 1;
   margin-right: 20px;
+  text-align: justify;
+
+
   /* Añade espacio entre el texto y el iframe */
 }
 
@@ -1275,7 +1278,7 @@ section .container {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 993px) {
   /* Ajustes generales */
   body {
     font-size: 14px;
@@ -1337,6 +1340,7 @@ section .container {
     border: none;
   }
 
+
   /* Ajustes para retransmisión */
   .retransmision-principal {
     flex-direction: column;
@@ -1348,6 +1352,7 @@ section .container {
   .retransmision-principal .descripcion {
     max-width: 100%;
     margin: 0 auto;
+    /* text-align: justify; */
   }
 
   .retransmision-principal .contenedor-twitch {
@@ -1457,50 +1462,59 @@ section .container {
 
     overflow-x:hidden !important;
   }
-  #formulario-page .navbar-collapse {
+  #formulario-page .navbar-collapse,#programadores-page .navbar-collapse,#sobrenosotros-page .navbar-collapse,
+  #transcripcion-page .navbar-collapse,#index-page .navbar-collapse,#terminos-page .navbar-collapse,#politicas-page .navbar-collapse{
     background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con transparencia */
     border-radius: 8px;
     padding: 10px;
-    transition: max-height 0.3s ease; /* Animación al expandir o contraer */
+    transition: max-height 0.3s ease-in-out; /* Animación al expandir o contraer */
   }
-  #formulario-page .navbar-collapse.collapse {
+  #formulario-page .navbar-collapse.collapse,#programadores-page .navbar-collapse.collapse,#sobrenosotros-page .navbar-collapse.collapse,
+  #index-page .navbar-collapse.collapse,#terminos-page .navbar-collapse.collapse,#politicas-page .navbar-collapse.collapse{
     display: none; /* Mantén colapsado por defecto */
   }
 
-  #formulario-page .navbar-collapse.collapse.show {
-    display: block; /* Muestra el menú cuando está desplegado */
+  #formulario-page .navbar-collapse.collapse.show,#programadores-page .navbar-collapse.collapse.show,#sobrenosotros-page .navbar-collapse.collapse.show,
+  #index-page .navbar-collapse.collapse.show,#terminos-page .navbar-collapse.collapse.show,#politicas-page .navbar-collapse.collapse.show{
+    display: block !important; /* Muestra el menú cuando está desplegado */
   }
 
-  #formulario-page .navbar-toggler {
+  #formulario-page .navbar-toggler,#programadores-page  .navbar-toggler,#sobrenosotros-page  .navbar-toggler,
+  #index-page  .navbar-toggler,#terminos-page  .navbar-toggler,#politicas-page  .navbar-toggler {
     display: block; /* Asegúrate de que el botón de colapso sea visible */
     border: none;
     background: transparent;
   }
-  #formulario-page .navbar-collapse::-webkit-scrollbar {
+  #formulario-page .navbar-collapse::-webkit-scrollbar,#programadores-page  .navbar-collapse::-webkit-scrollbar,#sobrenosotros-page  .navbar-collapse::-webkit-scrollbar,
+  #index-page  .navbar-collapse::-webkit-scrollbar,#terminos-page  .navbar-collapse::-webkit-scrollbar,#politicas-page  .navbar-collapse::-webkit-scrollbar{
     width: 8px;
   }
 
-  #formulario-page .navbar-collapse::-webkit-scrollbar-thumb {
+  #formulario-page .navbar-collapse::-webkit-scrollbar-thumb,#programadores-page  .navbar-collapse::-webkit-scrollbar-thumb,#sobrenosotros-page .navbar-collapse::-webkit-scrollbar-thumb,
+  #index-page  .navbar-collapse::-webkit-scrollbar-thumb,#terminos-page .navbar-collapse::-webkit-scrollbar-thumb,#politicas-page .navbar-collapse::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 4px;
   }
 
-  #formulario-page .navbar-collapse::-webkit-scrollbar-track {
+  #formulario-page .navbar-collapse::-webkit-scrollbar-track ,#programadores-page .navbar-collapse::-webkit-scrollbar-track,#sobrenosotros-page .navbar-collapse::-webkit-scrollbar-track,
+  #index-page  .navbar-collapse::-webkit-scrollbar-track,#terminos-page .navbar-collapse::-webkit-scrollbar-track,#politicas-page .navbar-collapse::-webkit-scrollbar-track  {
     background: rgba(0, 0, 0, 0.3);
   }
 
-  #formulario-page .navbar-nav {
+  #formulario-page .navbar-nav ,#programadores-page .navbar-nav,#sobrenosotros-page .navbar-nav, #index-page  .navbar-nav,#terminos-page .navbar-nav,#politicas-page .navbar-nav  {
     flex-direction: column;
     width: 100%;
   }
 
-  #formulario-page .navbar-nav .nav-item {
+  #formulario-page .navbar-nav .nav-item  ,#programadores-page .navbar-nav .nav-item,#sobrenosotros-page .navbar-nav .nav-item, 
+  #index-page .navbar-nav .nav-item,#terminos-page .navbar-nav .nav-item,#politicas-page .navbar-nav .nav-item {
     width: 100%;
     text-align: left;
     margin-bottom: 10px;
   }
 
-  #formulario-page .navbar-nav .nav-link {
+  #formulario-page .navbar-nav .nav-link,#programadores-page .navbar-nav .nav-link,#sobrenosotros-page .navbar-nav .nav-link, 
+  #index-page .navbar-nav .nav-link,#terminos-page .navbar-nav .nav-link,#politicas-page .navbar-nav .nav-link {
     display: block;
     padding: 10px 15px;
     color: white;
@@ -1508,17 +1522,22 @@ section .container {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  #formulario-page .navbar-nav .nav-link:hover {
+  #formulario-page .navbar-nav .nav-link:hover ,#programadores-page .navbar-nav .nav-link:hover,#sobrenosotros-page .navbar-nav .nav-link:hover, 
+  #index-page .navbar-nav .nav-link:hover,#terminos-page .navbar-nav .nav-link:hover,#politicas-page .navbar-nav .nav-link:hover{
     background-color: rgba(255, 255, 255, 0.1);
   }
-  #formulario-page .nav-link.button-style {
+  #formulario-page .nav-link.button-style,#programadores-page .nav-link.button-style,#sobrenosotros-page .nav-link.button-style, 
+  #index-page .nav-link.button-style,#terminos-page .nav-link.button-style,#politicas-page .nav-link.button-style{
     background-color: red !important; /* Asegura el estilo para este rango */
     color: white !important;
     border-radius: 25px;
     padding: 10px 20px;
   }
 
-  #formulario-page .nav-link.button-style:hover {
+  #formulario-page .nav-link.button-style:hover,#programadores-page .nav-link.button-style:hover,#sobrenosotros-page .nav-link.button-style:hover, 
+  #index-page .nav-link.button-style:hover,#terminos-page .nav-link.button-style:hover,#politicas-page .nav-link.button-style:hover{
     background-color: darkred !important;
   }
 }
+
+

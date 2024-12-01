@@ -71,7 +71,7 @@ https://templatemo.com/tm-583-festava-live
     </style>
 </head>
 
-<body>
+<body id="terminos-page">
 
     <main>
 
@@ -281,7 +281,7 @@ https://templatemo.com/tm-583-festava-live
                             </li>
 
                             <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Your Feedback</a>
+                                <a href="formulario.html" class="site-footer-link">Your Feedback</a>
                             </li>
                         </ul>
                     </div>
@@ -305,24 +305,4 @@ https://templatemo.com/tm-583-festava-live
     <script src="js/javascript.js"></script>
 
 
-    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Player object to render the Twitch stream -->
-    <script type="text/javascript">
-        new Twitch.Player("twitch-embed", {
-            channel: "ElChiringuitoTV",
-            parent: ["localhost"]
-        });
-    </script>
-
-    <!-- MODAL -->
-    <div id="videoModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
-            <video id="modalVideo" controls autoplay>
-                <source src="" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
-        </div>
-    </div>
 </body>
