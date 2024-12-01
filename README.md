@@ -1,6 +1,6 @@
-# BrauluRadio - Página HTML para Transcripciones y Contenidos Multimedia
+# BraulauRadio - Página HTML para Transcripciones y Contenidos Multimedia
 
-Bienvenido al repositorio de **BrauluRadio**, un proyecto escolar diseñado para ofrecer una experiencia web moderna que integra transcripciones de audio, reproductores multimedia, y una interfaz visualmente atractiva. Esta página está diseñada para ser responsiva y funcional en dispositivos de cualquier tamaño.
+Bienvenido al repositorio de **BraulauRadio**, un proyecto escolar diseñado para ofrecer una experiencia web moderna que integra transcripciones de audio, reproductores multimedia, y una interfaz visualmente atractiva. Esta página está diseñada para ser responsiva y funcional en dispositivos de cualquier tamaño.
 
 ## 🖥️ Tecnologías Utilizadas
 
