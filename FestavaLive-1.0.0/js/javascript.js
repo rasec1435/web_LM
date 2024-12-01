@@ -1,6 +1,6 @@
 function copiarEnlace() {
     // Define el enlace que quieres copiar
-    const enlace = "https://www.braulau.com"; // Cambia por el enlace que desees compartir
+    const enlace = "https://brauluradio.vercel.app/"; // Cambia por el enlace que desees compartir
 
     // Usa la API del portapapeles para copiar el enlace
     navigator.clipboard.writeText(enlace).then(() => {

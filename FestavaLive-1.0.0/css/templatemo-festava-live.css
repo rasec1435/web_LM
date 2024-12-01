@@ -321,11 +321,7 @@ body {
 
 .cuadro-rojo {
   width: 550px;
-  /* Ancho fijo para el iframe */
   height: 370px;
-  /* Altura fija para el iframe */
-  /* background-color: #e74c3c; */
-  /* Fondo rojo opcional */
   display: flex;
   align-items: center;
   justify-content: center;
